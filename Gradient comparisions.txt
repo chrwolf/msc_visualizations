@@ -1,3 +1,8 @@
+Erkenntnisse aus den Daten:
+	- Schrittgröße verkleinern, dafür mehr LF: Keine nennenswerten Auswirkungen auf den Gradienten, unveränderter Loss
+
+
+
 _var_to_shape
 {Reshape{2}.0: (200, 784L), Reshape{2}.0: (200, 4), Reshape{2}.0: (200, 200), Reshape{1}.0: (200,), Reshape{1}.0: (4,), Reshape{1}.0: (1,), Reshape{1}.0: (200,), Reshape{2}.0: (200, 4), Reshape{1}.0: (200,), Reshape{2}.0: (2, 200), Reshape{1}.0: (4,), Reshape{2}.0: (787L, 200), Reshape{2}.0: (784L, 200), Reshape{1}.0: (200,), Reshape{1}.0: (200,), Reshape{1}.0: (200,), Reshape{2}.0: (200, 200), Reshape{2}.0: (200, 200), Reshape{2}.0: (1, 2), Reshape{1}.0: (784L,)}
 
@@ -9,7 +14,7 @@ Model spezifische Anmerkungen:
 	Basis Model: 129.8 auf VX
 	1 hmc, 8 lf, Schrittgröße halbiert, ohne transition computation: Größerer Loss 130.3 auf VX, viel mehr große Gradienten
 	2 hmc, 4 lf, Schrittgröße normal, ohne transition computation: Deutlich kleinerer Loss 127.3 auf VX
-	1 hmc, 8 lf, Schrittgröße halbiert: Loss 129.8 auf VX
+	1 hmc, 8 lf, Schrittgröße halbiert: Loss 129.8 auf VX   IDENTISCH mit Basis
 	2 hmc, 4 lf, Schrittgröße halbiert: Loss 131.0 auf VX
 
 
@@ -28,7 +33,7 @@ Indices großer Gradienten (größer als 5):
 	2 hmc, 4 lf, Schrittgröße NORMAL, ohne transition computation:
 		im MEAN: [197230]
 		
-	1 hmc, 8 lf, Schrittgröße halbiert:
+	1 hmc, 8 lf, Schrittgröße halbiert:		bis auf einen, IDENTISCH MIT Basis
 		im MEAN: [164527, 164532, 164563, 164588, 197226, 197230, 197270, 197271, 197279, 197375, 197414, 197426, 197439, 197451, 197535, 197567, 197599, 197611, 197671, 197722, 197767, 197823, 197831, 197862, 197866, 197867, 197938, 197991]
 		
 	2 hmc, 4 lf, Schrittgröße halbiert:
