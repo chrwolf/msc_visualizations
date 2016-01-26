@@ -4009,3 +4009,11 @@ garray(92.95869445800781)
 Final test loss
 garray(92.30754852294922)
 Theano: Initializing cuBLAS
+
+Real loss statistics (on 5 random copies of test and validation set):
+
+Final loss on VX: 93.04087829589844
+Final loss on TX: 92.34864807128906
+Final loss on  X: 91.6407699584961
+
+Final estimated test NLL: 88.2703696035
